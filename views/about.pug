@@ -1,0 +1,87 @@
+extends base.pug
+
+block style 
+    style
+        include ../static/about/about.css
+        
+
+block content 
+    section#intro
+        div.tags
+            <a href="/"id="home-tag">HOME &gt;</a>
+            span ABOUT US &gt;
+        div.on-page
+        p About Us
+        //- img(src="../static/about/main.jpg", alt="", srcset="")
+    //- section.welcome
+    //-     div.left
+    //-         h2 Wellcome to our Charity
+    //-         hr
+    //-         p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum
+    //-         a(href="#intro") 
+    //-             button BECOME A VOLUNTEER
+    //-     div.i-am-right-welcome
+    //-         div.inner-welcome
+    //-             img(src="../static/intro.jpg", alt="")
+    section.welcome 
+        div.left
+            p#about ABOUT US 
+            h2 Giveing a helping hand to <br> a needy people
+            p#first A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            p#second A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. 
+            a(href="#intro") 
+                //- button BECOME A VOLUNTEER
+                <button onclick="topFunction()" id="introbtn" title="Go to top">BECOME A VOLUNTEER</button>
+        div.i-am-right-welcome
+            div.inner-welcome
+                img(src="../static/about/intro.png", alt="")
+
+        
+    section.loves-help
+        div.vol1
+            img(src="../static/Volunteer/vol1.jpg", alt="")
+            div.info1
+                p John Wick
+                span Volunteer 
+            hr#vol1hr
+        div.vol2
+             img(src="../static/Volunteer/vol2.jpg", alt="")
+             div.info2
+                p Alex Martin
+                span Volunteer
+             hr#vol2hr
+        div.vol3
+             img(src="../static/Volunteer/vol3.jpg", alt="")
+             div.info3
+                p Max Love
+                span Volunteer
+             hr#vol3hr
+
+    
+    section.join-us
+        div.left-join-us
+            div.inner
+                img(src="../static/Volunteer/join-us.jpg", alt="")
+        div.rightjoin
+                h1 Join with Us
+                hr
+                p#i-am-right-join The legal definition of a charitable organization (and of charity) varies between countries and in some instances regions of the country. The regulation, the tax treatment, and the way. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum
+                a(href="#intro") 
+                    button.join-now Join Now
+    script
+        include ../static/about/about.js
+    //- section#form
+    //-     div.contactmessage 
+    //-         | Contact us
+    //-     div.form-input   
+    //-         <form action="/about" method="post" id="contact">
+    //-         <input type="text" name="names" id="name" placeholder="Enter your name">
+    //-         <input type="text" name="age" id="age" placeholder="Enter your age">
+    //-         <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+    //-         <textarea name="address" id="address" cols="30" rows="10"placeholder="Enter your address"></textarea>
+    //-         <textarea name="more" id="more" cols="30" rows="10"placeholder="More about you...."></textarea>
+    //-         //- <button id="btn-summit">summit</button>
+    //-         a(href="#intro") 
+    //-             <button id="btn-submit">Submit</button>
+        
+    //- </form>

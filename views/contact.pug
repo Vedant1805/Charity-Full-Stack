@@ -1,0 +1,65 @@
+extends base.pug
+
+block style 
+    style
+
+block style 
+    style
+        include ../static/contact/contact.css
+
+block content
+    section.intro
+        ion#intro
+        div.tags
+            <a href="/"id="home-tag">HOME &gt;</a>
+            span CONTACT US &gt;
+        div.on-page
+        p Contact Us
+    
+    section.below-intro
+        span "16 For God so loved the world, that he gave his only <br> begotten Son, that whosoever believeth in him should not <br> perish, but have everlasting life."
+        h4 — John 3:16 KJV
+    
+    section.main
+        div.left
+            h2 Get In touch with us
+
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, conse ctetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accu msan sodales odio, id tempus velit ullamc.
+
+            div.s-links2
+                div.social-links2
+                    <ul>
+                        <li> <a href="https://twitter.com/vedantdabhade" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li> <a href="https://www.facebook.com/vedant.dabhade.52/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li> <a href="https://www.instagram.com/vedant_patil.4/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li> <a href="https://www.linkedin.com/in/vedant-dabhade-27b896255/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li> <a href="https://github.com/Vedant1805" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+            div.phone
+                <a href="tel:9405401327" target="_blank"><i class="fa-solid fa-phone"></i><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp9405401327</span></a>
+            
+            div.mail
+                <a href="mailto:vedantdabhade174@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span>vedantdabhade174@gmail.com</span></a>
+
+            div.myaddress
+                <a href="https://goo.gl/maps/qyU9UWhK5UYCN7328" target="_blank"><i class="fa-sharp fa-solid fa-location-dot"></i> &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp <span>Main Str. no 45-46, b3, 56832, Los Angeles, CA</span></a>
+
+        div.right
+            <form action="/contact" method="post" id="contact">
+                <input type="text " id="first " name="First_Name" placeholder="Name">
+                <input type="email" name="C_Email" id="" placeholder="Email">
+                <textarea name="C_Message" id="textarea" cols="0 " rows="15 "placeholder="Message"></textarea>
+                a(href="#intro") 
+                <button id="btn-submit">Contact us</button>
+        //- div.form-inputs
+        //- <form action="/contact" method="post"id="contact">
+         
+        //-         <input type="text" name="firstname" id="name" placeholder="Name">
+        //-         <input type="email" name="email" placeholder="Your Mail">
+        //-         <textarea name="more" id="more" cols="30" rows="10"placeholder="Message"></textarea>
+        //-         a(href="#intro") 
+        //-             <button id="btn-submit">Send Message</button>
+        //- </form>
+    script
+        include ../static/contact/contact.js
+        

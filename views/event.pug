@@ -1,0 +1,109 @@
+extends base.pug
+
+block style 
+    style
+        include ../static/event/event.css
+        
+
+block content 
+    section#intro
+        div.tags
+            <a href="/"id="home-tag">HOME &gt;</a>
+            span EVENT &gt;
+        div.on-page
+        p Event
+    
+    section#main 
+    
+        div.left
+            img(src="../static/event/main.jpg", alt="", srcset="")
+            h2 Possit Nostro Aeterno Eu Vis, Ut Cum Quem Reque
+            div#datecmt
+                p 18 May 2016
+                p By John Doe 
+                p 0 Comments
+            .info
+                p
+                    |Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .info 
+                p
+                    |Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            div.eventdet
+                h2 Event Details
+
+                div.icons
+                    <li> <i class="fa-solid fa-clock"></i><span> &nbsp Date:</span> 24 October, 2018 | 8:00AM - 11:00PM</li>
+                    <li><i class="fa-sharp fa-solid fa-location-dot"></i><span>  &nbsp Location:</span> 2736 Hinkle Deegan Lake Road</li>
+                    <li> <i class="fa-solid fa-ticket"></i><span> &nbsp Ticket:</span> 50$</li>
+
+            div.reply
+                h2 Leave a reply
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+                div.replytag
+                    form(action="/event",method="post") 
+                        <input type="text " id="E-Name" name="E_name" placeholder="Name">
+                        <input type="email" name="E_Email" id="" placeholder="Email">
+                        <input type="name" name="E_Website" id="" placeholder="Website">
+                        
+                        <textarea name="E_Message" id="textarea" cols="0 " rows="8 "placeholder="Messages"></textarea>
+                         <button id="rplybtn">Submit</button>
+                //- button#rplybtn
+                //-     |submit
+                
+        
+           
+        div.right
+            div.category
+                h2 Category
+                li #[a(href="/event") Health (57)]
+                li #[a(href="/event") Food (86)]
+                li #[a(href="/event") Education (241)]
+                li #[a(href="/event") Events (14)]
+            div#news1
+                h1 Latest Posts
+                div.firstnews1
+                    img(src="../static/Volunteer/join-us.jpg", alt="")
+                    p Possit Nostro Aeterno<br> Eu Vis, Ut Cum Quem<br> Reque
+                span By John doe &nbsp&nbsp&nbsp 12 November 2018
+                div.firstnews1
+                    img(src="../static/Volunteer/join-us.jpg", alt="")
+                    p Possit Nostro Aeterno<br> Eu Vis, Ut Cum Quem<br> Reque
+                span By John doe &nbsp&nbsp&nbsp 12 November 2018
+                div.firstnews1
+                    img(src="../static/Volunteer/join-us.jpg", alt="")
+                    p Possit Nostro Aeterno<br> Eu Vis, Ut Cum Quem<br> Reque
+                span By John doe &nbsp&nbsp&nbsp 12 November 2018
+
+            div#news1
+            
+                h1 Latest Causes
+
+                div.firstnews1
+
+                    img(src="../static/Volunteer/join-us.jpg", alt="")
+
+                    p Possit Nostro Aeterno<br> Eu Vis, Ut Cum Quem<br> Reque
+
+                span <input type="range" id="vol" name="vol" min="49" max="490">
+                div.firstnews1
+
+                    img(src="../static/Volunteer/join-us.jpg", alt="")
+                    
+                    p Possit Nostro Aeterno<br> Eu Vis, Ut Cum Quem<br> Reque
+
+                span By John doe &nbsp&nbsp&nbsp 12 November 2018
+
+                div.firstnews1
+
+                    img(src="../static/Volunteer/join-us.jpg", alt="")
+
+                    p Possit Nostro Aeterno<br> Eu Vis, Ut Cum Quem<br> Reque
+                    
+                span By John doe &nbsp&nbsp&nbsp 12 November 2018
+        
+        
+    
+    script
+        include ../static/about/about.js

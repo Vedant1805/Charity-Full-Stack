@@ -1,0 +1,570 @@
+/* ****LANGUAGES IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+/********HEAD_LINKS SECTION*******/
+.s-links {
+    display: flex;
+    background-color: #bc5148;
+    justify-content: space-around;
+    align-items: center;
+    height: 43px;
+
+
+}
+
+.s-links ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.s-links ul li {
+    padding: 1px 8px;
+    align-items: center;
+
+}
+
+.s-links ul li a {
+    position: relative;
+    right: 76px;
+    /* font-size: 0.9rem; */
+    color: black;
+    transition-duration: 0.3s;
+
+
+}
+
+.s-links ul li a :hover {
+    color: white;
+    transition-duration: 0.3s;
+    transform: rotateY(360deg);
+
+
+}
+
+.sltag {
+    display: flex;
+    list-style: none;
+    position: relative;
+    left: 28px;
+    color: black;
+}
+
+.sltag button {
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    margin: 0px 10px;
+    padding: 14px;
+    cursor: pointer;
+    font-family: 'Baloo Thambi 2', cursive;
+    transition-duration: 0.3s;
+}
+
+.sltag button:hover {
+    color: white;
+}
+
+#login {
+    background-color: #f4b214;
+}
+
+/* **************************** */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #65c9bb;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+
+/* ****JAVASCRIPT**** */
+.opacity {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.background {
+    transition-duration: 0.3s;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+
+/* UNIVERSAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+#call-us {
+    text-decoration-line: underline;
+
+}
+
+*::selection {
+    color: black;
+    background-color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.personalinfo {
+    height: 200px;
+    background-color: #c30047;
+}
+
+.personalinfo img {
+    height: 50px;
+}
+
+
+/* ****UPCOMING-EVENTS */
+.events {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #3c1919;
+    width: 100%;
+    height: 105px;
+}
+
+.events #social-top img {
+    height: 38px;
+    margin: 12px;
+}
+
+.events span {
+    padding: 0px 12px;
+}
+
+.upcoming-events {
+    display: flex;
+    text-align: center;
+    color: white;
+
+}
+
+.upcoming-events h2 {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 13px;
+    right: 32px;
+
+}
+
+.upcoming-events p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.upcoming-events div {
+    margin: 1px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.events .upcoming-events .read-more a {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    color: #dd3e3e;
+    text-decoration: none;
+    top: 11px;
+    left: 11px;
+    position: relative;
+}
+
+.MY {
+    font-size: 21px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ****SECTION FOR NAVBAR****  */
+.navbar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0px;
+    z-index: 10;
+}
+
+.navbar .logo a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+.navbar .logo span {
+    color: #dd3e3e;
+}
+
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar ul li {
+    padding: 0px 13px;
+    font-family: 'Baloo Thambi 2', cursive;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: black;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    text-decoration: none;
+    /* padding: 1px 14px; */
+    transition: color .3s ease;
+
+}
+
+.navbar ul li a:hover {
+    color: black;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.navbar .send-donation button {
+    height: 50px;
+    width: 186px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    padding: 14px 23px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 2px;
+    background: #dd3e3e;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* ****INTRO-SECTION**** */
+#intro {
+    background: center/cover no-repeat url(/static/intro2.jpg);
+    height: 590px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.7; */
+    text-align: center;
+    box-shadow: inset 440px 440px 300px 10px rgb(0 0 0 / 50%);
+    box-shadow: inset 440px 440px 300px 10px rgb(0 0 0 / 70%);
+}
+
+.tags {
+    font-size: 1.2rem;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tags a {
+    padding: 0px 8px;
+    color: rgba(255, 255, 255, 0.8);
+    color: white;
+    /* opacity: 0.8; */
+    text-decoration: none;
+    transition: 1s;
+}
+
+.tags a:hover {
+    color: #65c9bb;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.tags span {
+    font-size: 1.7rem;
+}
+
+.tags a:hover {
+    color: #65c9bb;
+    opacity: 1;
+    font-weight: 600;
+}
+
+#intro p {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 600;
+    font-size: 3.7rem;
+}
+
+/* ****DONATION-PEOPLE SECTION */
+.donations {
+    margin-top: 150px;
+    height: 1150px;
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.donations h2 {
+    font-family: "Dosis", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+    margin: 48px -51px;
+}
+
+.donations .time {
+    color: #bfbfbf;
+    font-size: 1.4rem;
+    margin: -27px -48px;
+    position: absolute;
+    font-family: "Overpass", Arial, sans-serif;
+}
+
+.donations p {
+    font-family: "Overpass", Arial, sans-serif;
+    background: #fff;
+    font-size: 24px;
+    line-height: 1.9;
+    font-weight: 300;
+    color: gray;
+    position: relative;
+    margin-top: 82px;
+    right: 25%;
+}
+
+.donations a {
+    color: orange;
+    font-size: 1.7rem;
+    margin: 16px -66px;
+    position: absolute;
+    font-family: "Overpass", Arial, sans-serif;
+}
+
+.dollor {
+    font-size: 2.0rem;
+    color: #65c9bb;
+}
+
+.donations img {
+    height: 140px;
+    width: 140px;
+    border: 7px solid #f0f0f0;
+    border-radius: 50%;
+    margin-top: 61px;
+}
+
+.firstbox {
+
+    box-shadow: 0px 3px 66px -24px rgb(0 0 0 / 20%);
+    height: 332px;
+    width: 513px;
+    background-color: #fefefe;
+    margin: 25px 34px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondbox {
+    box-shadow: 0px 3px 66px -24px rgb(0 0 0 / 20%);
+    height: 332px;
+    width: 513px;
+    background-color: #fefefe;
+    margin: 25px 34px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.thirdbox {
+    box-shadow: 0px 3px 66px -24px rgb(0 0 0 / 20%);
+    height: 332px;
+    width: 513px;
+    background-color: #fefefe;
+    margin: 25px 34px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-row {
+
+    display: flex;
+
+}
+
+.second-row {
+    display: flex;
+}
+
+.third-row {
+    display: flex;
+}
+
+
+
+/*   *****FOR FOTTER *****    */
+footer {
+    margin-top: 90px;
+    display: flex;
+    padding: 120px 120px;
+    background-color: #263B5C;
+    height: 760px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mission {
+
+    margin-top: 180px;
+    font-size: 1.4rem;
+    width: 720px;
+    height: 570px;
+
+}
+
+.mission #aboutmission {
+
+    font-size: 2.7rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 40px;
+
+}
+
+#missionp {
+    opacity: 0.7;
+    font-size: 2.0rem;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+#missionspan {
+    opacity: 0.7;
+    font-size: 1.7rem;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: white;
+
+}
+
+
+.links h1 {
+
+    margin-left: 30px;
+    margin-top: 52px;
+    font-size: 2.7rem;
+    color: white;
+    right: 37%;
+    font-family: 'Lato', sans-serif;
+    /* margin-bottom: 30px; */
+    position: relative;
+}
+
+.links ul {
+    margin-top: 50px;
+}
+
+.links ul li {
+
+    padding: 13px 20px;
+    font-family: 'Baloo Thambi 2', cursive;
+    list-style: none;
+    color: white;
+    font-size: 1.8rem;
+
+}
+
+.links ul li a {
+    opacity: 0.7;
+    text-decoration: none;
+    color: white;
+}
+
+.links ul li :hover {
+    opacity: 1;
+}
+
+#suscribeus {
+    font-family: 'Baloo Thambi 2', cursive;
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 194px;
+
+}
+
+#suscribeus h1 {
+    font-size: 2.7rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    /* margin-bottom: 100px; */
+
+}
+
+.apps img {
+    height: 45px;
+    /* padding: 34px 12px; */
+    margin: 12px 12px;
+    margin: 12px;
+}
+
+.apps {
+    margin-bottom: 74px;
+}
+
+/* ****FOR COPYRIGHT**** */
+
+.copyright {
+    background-color: #263B5C;
+    color: white;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.copyright p {
+    margin-bottom: 20px;
+}

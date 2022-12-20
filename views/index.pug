@@ -1,0 +1,69 @@
+//-     script(src="../static/home.js") 
+
+extends base.pug
+
+//- block scripts
+//-       script(src='/home.js')
+
+block style 
+    style
+        include ../static/home/home.css
+
+block content
+    
+    section#introsection
+        div#intromp
+            h2#name.name Daisy Walker, 5months. old
+            h1#parents NEEDS A LOVING PARENTS 
+            p#childinfo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.
+            <button class="adopt" action="/index" method="post">Adopt Him Now! </button> 
+    
+    section#causes
+        div#causesmp
+            h1#major Our Major Causes
+            p#creepeth Creepeth called face upon face yielding midst is after moveth
+
+        div.card#card
+            div#card1
+                h4#cardh1 Give Donation
+                img(src="../static/home/causespng/5299.jpg", alt="")
+                p#cardp It you're. Was called you're fowl grass lesser land together waters beast darkness earth land whose male all moveth fruitful.
+
+            div#card2
+                h4 Give Inspiration 
+                img(src="../static/home/causespng/inspiration.jpg", alt="")
+                p It you're. Was called you're fowl grass lesser land together waters beast darkness earth land whose male all moveth fruitful.
+
+            div#card3
+                h4 Become Bolunteer
+                img(src="../static/home/causespng/1029.jpg", alt="")
+                p It you're. Was called you're fowl grass lesser land together waters beast darkness earth land whose male all moveth fruitful.
+      
+
+    section#aboutpg
+        div.left 
+            h2 About Us 
+            h1 We are ChildHope charity <br> foundation 
+            p when a child gett access to good food, it can change just about eveything. Sed do eiusmod tempor incididunt dolore manga aliqua. ut enim ad minim veniam, quis nostrud exercitation.
+            p when a child gett access to good food, it can change just about eveything. Sed do eiusmod tempor incididunt dolore manga aliqua. ut enim ad minim veniam, quis nostrud exercitation.
+            a(href="/about") 
+                            <button id="Dismore">Discover More</button>
+        div.right 
+            img(src="../static/home/causespng/foodboys.jpg", alt="")
+    
+    section#need-help
+         div.they-need-help
+         div.cardtemp
+                h1 They Need Your Help
+                p Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet pulvinar ante tempor etiam lacus eros
+                span#help-span Sedac odio aliquet, fringilla odio eget, tincidunt nunc. Duis aliquet pulvinar ante tempor etiam lacus eros
+                a(href="/donate") 
+                        <button id="need-ourhelp-btn">Donate in a  Case</button> 
+
+    section.map
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2516.1744006299555!2d55.275101514930014!3d25.197618798313837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1658065671925!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    section.vedant 
+        <i class="fa-solid fa-hands-holding-dollar"></i>
+
+    script
+        include ../static/home/home.js
