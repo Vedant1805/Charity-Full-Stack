@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost/ContactCharity', {
 })
 
 
-// JOINING VIEWS AND STATIC FILES //
+// JOINING VIEWS AND STATIC FILESs //
 
 app.locals.basedir = path.join(__dirname, 'views');
 app.use('/static', express.static('static'))
